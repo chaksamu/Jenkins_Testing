@@ -1,5 +1,5 @@
 
-if [ "_$1" == "_" ]; then
+if [[ "_$1" == "_" ]]; then
 	echo "Name of folder is required"
 	exit 100
 fi
