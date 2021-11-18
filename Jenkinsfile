@@ -34,7 +34,7 @@ pipeline {
 				NEXUS_URL="http://localhost:8081"
 				SYN_DB="tools"
 				NEX_LOC="imn_config_mgmt/chi_ui_imn_conf_prod"
-				sh "curl -v -n --upload-file chi_ui_imn_conf_prod-${version}.${scmVars.SVN_REVISION}.tar.gz ${NEXUS_URL}/repository/${SYN_DB}/${NEX_LOC}/ -u 'admin:chaksamu'"
+				sh "curl -v -n --upload-file chi_ui_imn_conf_prod-${version}.${SVN_REVISION}.tar.gz ${NEXUS_URL}/repository/${SYN_DB}/${NEX_LOC}/ -u 'admin:chaksamu'"
 			    }
 			}
 		}
